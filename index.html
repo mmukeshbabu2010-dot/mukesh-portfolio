@@ -5,10 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#10120f">
-  <meta name="description" content="The personal portfolio of M. Mukesh Babu — software development, AI-powered applications, browser-based systems, and hardware engineering.">
+  <meta name="description" content="M. Mukesh Babu's portfolio: software engineering, Oqerun OS, AI-powered applications, RigCraft 3D, educational technology, and electronics projects.">
+  <meta name="author" content="M. Mukesh Babu">
   <meta property="og:title" content="M. Mukesh Babu — Software & Systems">
-  <meta property="og:description" content="Exploring the intersection of software, AI, operating systems, and hardware.">
+  <meta property="og:description" content="Explore software, browser-based systems, AI and education projects, 3D hardware tools, and electronics experiments.">
   <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mmukeshbabu2010-dot.github.io/mukesh-portfolio/">
   <title>M. Mukesh Babu — Software & Systems</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -59,7 +61,8 @@
     }
 
     a:focus-visible,
-    button:focus-visible {
+    button:focus-visible,
+    summary:focus-visible {
       outline: 2px solid var(--accent);
       outline-offset: 5px;
     }
@@ -119,7 +122,7 @@
       letter-spacing: -.045em;
     }
 
-    .section-heading p {
+    .section-heading > p {
       max-width: 370px;
       margin: 0;
       color: var(--muted);
@@ -389,6 +392,7 @@
 
     .project-card {
       display: flex;
+      min-width: 0;
       min-height: 290px;
       flex-direction: column;
       padding: 27px;
@@ -476,10 +480,6 @@
       color: var(--accent);
     }
 
-    .project-links .disabled-link {
-      color: #858b7f;
-    }
-
     .project-card-wide {
       grid-column: 1 / -1;
       min-height: auto;
@@ -498,6 +498,57 @@
     .project-card-wide .tags {
       align-content: start;
       margin-top: 0;
+    }
+
+    /* Educational ecosystem links */
+
+    .resource-heading {
+      margin: 25px 0 10px;
+      color: var(--text);
+      font: 600 13px var(--display);
+    }
+
+    .resource-list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
+      margin-top: 12px;
+    }
+
+    .resource-link {
+      display: flex;
+      min-width: 0;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      padding: 11px 12px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      color: var(--muted);
+      font-size: 11px;
+      transition: color .2s, border-color .2s, background .2s;
+    }
+
+    .resource-link:hover {
+      border-color: #59634b;
+      background: rgba(199, 243, 107, .035);
+      color: var(--accent);
+    }
+
+    .resource-link span:first-child {
+      overflow-wrap: anywhere;
+    }
+
+    .resource-link span:last-child {
+      flex-shrink: 0;
+      color: var(--accent);
+    }
+
+    .project-note {
+      margin: 13px 0 0;
+      color: var(--muted);
+      font-size: 11px;
+      line-height: 1.8;
     }
 
     /* About */
@@ -803,6 +854,10 @@
         font-size: 22px;
       }
 
+      .resource-list {
+        grid-template-columns: 1fr;
+      }
+
       .skill-groups {
         grid-template-columns: 1fr;
       }
@@ -843,6 +898,7 @@
 
       <nav class="nav-links" aria-label="Main navigation">
         <a href="#work">Work</a>
+        <a href="#education">Education</a>
         <a href="#about">About</a>
         <a href="#startup">Startup Intelligence</a>
         <a href="#contact">Contact</a>
@@ -866,8 +922,9 @@
 
           <p class="hero-copy">
             I'm M. Mukesh Babu. I explore software engineering, AI-powered
-            applications, browser-based operating systems, and hardware
-            prototypes — turning ideas into projects people can explore.
+            applications, browser-based operating systems, educational
+            technology, and hardware prototypes — turning ideas into projects
+            people can explore.
           </p>
 
           <div class="hero-actions">
@@ -912,7 +969,7 @@
             <span class="discipline-number">03</span>
             <div>
               <h3>AI & Education</h3>
-              <p>Learning platforms and practical AI-powered experiences.</p>
+              <p>Learning resources and practical AI-assisted experiences.</p>
             </div>
           </div>
 
@@ -920,7 +977,7 @@
             <span class="discipline-number">04</span>
             <div>
               <h3>Hardware & Embedded Systems</h3>
-              <p>Arduino experiments, electronics, and physical prototypes.</p>
+              <p>Interactive 3D tools, electronics, and physical prototypes.</p>
             </div>
           </div>
 
@@ -952,8 +1009,9 @@
             <h2>Projects with a purpose.</h2>
           </div>
           <p>
-            A selection of projects across software, education, systems, and
-            hardware. Open a repository or live demo to explore the work.
+            Explore projects across software, education, systems, and hardware.
+            Each project links to its live experience, source code, or related
+            resources where available.
           </p>
         </div>
 
@@ -973,6 +1031,7 @@
               <span class="tag">TypeScript</span>
               <span class="tag">WebAssembly</span>
               <span class="tag">Vite</span>
+              <span class="tag">Open source</span>
             </div>
             <div class="project-links">
               <a href="https://vruntime-labs.github.io/oqerun-os/"
@@ -997,6 +1056,7 @@
               <span class="tag">Three.js</span>
               <span class="tag">JavaScript</span>
               <span class="tag">3D</span>
+              <span class="tag">Personal project</span>
             </div>
             <div class="project-links">
               <a href="https://mmukeshbabu2010-dot.github.io/rigcraft-3d/"
@@ -1004,33 +1064,14 @@
               <a href="https://github.com/mmukeshbabu2010-dot/rigcraft-3d"
                  target="_blank" rel="noopener noreferrer">Source code ↗</a>
             </div>
-          </article>
-
-          <article class="project-card">
-            <div class="project-top">
-              <span class="project-type">03 / Education technology</span>
-              <span class="project-arrow" aria-hidden="true">↗</span>
-            </div>
-            <h3>ICSE MasterClass</h3>
-            <p>
-              An educational ecosystem focused on ICSE and ISC learning,
-              study resources, student experiences, and AI-assisted learning
-              tools.
+            <p class="project-note">
+              An independent personal project, separate from VRuntime Labs.
             </p>
-            <div class="tags">
-              <span class="tag">Web development</span>
-              <span class="tag">Education</span>
-              <span class="tag">AI</span>
-            </div>
-            <div class="project-links">
-              <a href="https://github.com/icse-cbse-10-12"
-                 target="_blank" rel="noopener noreferrer">Explore organization ↗</a>
-            </div>
           </article>
 
           <article class="project-card">
             <div class="project-top">
-              <span class="project-type">04 / Developer tools</span>
+              <span class="project-type">03 / Developer tools</span>
               <span class="project-arrow" aria-hidden="true">↗</span>
             </div>
             <h3>Oqerun Store</h3>
@@ -1054,13 +1095,13 @@
 
           <article class="project-card">
             <div class="project-top">
-              <span class="project-type">05 / Productivity software</span>
+              <span class="project-type">04 / Productivity software</span>
               <span class="project-arrow" aria-hidden="true">↗</span>
             </div>
             <h3>Oqerun Office</h3>
             <p>
               A browser-based office-suite project exploring document writing,
-              spreadsheets, and presentations in one application.
+              spreadsheets, and presentations within one application.
             </p>
             <div class="tags">
               <span class="tag">Documents</span>
@@ -1077,14 +1118,13 @@
 
           <article class="project-card">
             <div class="project-top">
-              <span class="project-type">06 / Video tooling</span>
+              <span class="project-type">05 / Video tooling</span>
               <span class="project-arrow" aria-hidden="true">↗</span>
             </div>
             <h3>ShortForge AI</h3>
             <p>
-              A project exploring the conversion of long-form videos into
-              short-form clips, with a focus on making the editing workflow
-              easier to use.
+              A project exploring how long-form videos can be turned into
+              short-form clips, with a focus on simplifying the editing workflow.
             </p>
             <div class="tags">
               <span class="tag">Video</span>
@@ -1096,6 +1136,30 @@
                  target="_blank" rel="noopener noreferrer">Live project ↗</a>
               <a href="https://github.com/vruntime-labs/shortforge-ai"
                  target="_blank" rel="noopener noreferrer">Source code ↗</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-top">
+              <span class="project-type">06 / Education technology</span>
+              <span class="project-arrow" aria-hidden="true">↗</span>
+            </div>
+            <h3>ICSE MasterClass 10</h3>
+            <p>
+              An educational project ecosystem associated with ICSE and CBSE
+              learning resources, study materials, subject-focused projects,
+              and educational tools. Explore the channel and linked repositories.
+            </p>
+            <div class="tags">
+              <span class="tag">Education</span>
+              <span class="tag">Study resources</span>
+              <span class="tag">Web projects</span>
+            </div>
+            <div class="project-links">
+              <a href="https://www.youtube.com/@ICSEMasterClass10"
+                 target="_blank" rel="noopener noreferrer">YouTube channel ↗</a>
+              <a href="https://github.com/icse-cbse-10-12"
+                 target="_blank" rel="noopener noreferrer">GitHub organization ↗</a>
             </div>
           </article>
 
@@ -1125,6 +1189,92 @@
       </div>
     </section>
 
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Education ecosystem</p>
+            <h2>More than one project.</h2>
+          </div>
+          <p>
+            Browse the individual repositories associated with the
+            ICSE MasterClass 10 educational ecosystem. These links lead to
+            the original GitHub projects and their maintainers.
+          </p>
+        </div>
+
+        <article class="project-card project-card-wide">
+          <div class="project-top">
+            <span class="project-type">ICSE MasterClass 10 / Learning resources</span>
+            <span class="project-arrow" aria-hidden="true">↗</span>
+          </div>
+
+          <h3>Study, explore, and learn.</h3>
+          <p>
+            This collection brings together study-material repositories,
+            subject resources, educational hubs, and learning-tool experiments.
+            Visit each repository to see its current contents, documentation,
+            license, and development status.
+          </p>
+
+          <div class="tags">
+            <span class="tag">ICSE / CBSE</span>
+            <span class="tag">Study materials</span>
+            <span class="tag">Chemistry</span>
+            <span class="tag">JEE / NEET</span>
+            <span class="tag">Educational tools</span>
+          </div>
+
+          <h4 class="resource-heading">Learning platforms and tools</h4>
+          <div class="resource-list">
+            <a class="resource-link"
+               href="https://github.com/icse-cbse-10-12/icse-class-10-materials"
+               target="_blank" rel="noopener noreferrer">
+              <span>ICSE Class 10 Materials</span><span>↗</span>
+            </a>
+            <a class="resource-link"
+               href="https://github.com/icse-cbse-10-12/EduBot"
+               target="_blank" rel="noopener noreferrer">
+              <span>EduBot</span><span>↗</span>
+            
+            <a class="resource-link"
+               href="https://github.com/icse-cbse-10-12/Master-OS"
+               target="_blank" rel="noopener noreferrer">
+              <span>Master-OS</span><span>↗</span>
+            </a>
+            <a class="resource-link"
+               href="https://github.com/icse-cbse-10-12/icsemasterclass10.github.io"
+               target="_blank" rel="noopener noreferrer">
+              <span>ICSE MasterClass Website Repository</span><span>↗</span>
+            </a>
+            <a class="resource-link"
+               href="https://github.com/icse-cbse-10-12/icse-cbse-10-12"
+               target="_blank" rel="noopener noreferrer">
+              <span>ICSE-CBSE-10-12 Repository</span><span>↗</span>
+            </a>
+            <a class="resource-link"
+               href="https://github.com/icse-cbse-10-12"
+               target="_blank" rel="noopener noreferrer">
+              <span>Explore all organization repositories</span><span>↗</span>
+            </a>
+          </div>
+
+          <div class="project-links">
+            <a href="https://www.youtube.com/@ICSEMasterClass10"
+               target="_blank" rel="noopener noreferrer">Watch on YouTube ↗</a>
+            <a href="https://github.com/icse-cbse-10-12"
+               target="_blank" rel="noopener noreferrer">Visit GitHub organization ↗</a>
+          </div>
+
+          <p class="project-note">
+            Repository links are provided for discovery. Their current features,
+            ownership, licensing, and maintenance status should be checked on
+            each repository's own page.
+          </p>
+        </article>
+      </div>
+    </section>
+
     <section class="section" id="about">
       <div class="container">
         <div class="about-grid">
@@ -1142,9 +1292,9 @@
             </p>
             <p>
               My work spans browser-based environments, educational
-              applications, interactive 3D tools, and electronics experiments.
-              I enjoy exploring an idea, building a working version, and
-              improving it through iteration.
+              applications, interactive 3D tools, video-tooling experiments,
+              and electronics projects. I enjoy exploring an idea, building
+              a working version, and improving it through iteration.
             </p>
             <p>
               I also contribute to projects under <strong>VRuntime Labs</strong>.
@@ -1215,7 +1365,7 @@
             <h2>Have an interesting idea? <span>Let's talk.</span></h2>
             <p>
               Interested in collaborating, discussing a project, or exchanging
-              ideas about software, AI, and hardware? Reach out.
+              ideas about software, AI, education, and hardware? Reach out.
             </p>
           </div>
 
@@ -1242,6 +1392,8 @@
         <a href="mailto:mmukeshbabu.2010@gmail.com">Email</a>
         <a href="https://github.com/mmukeshbabu2010-dot"
            target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+        <a href="https://www.youtube.com/@ICSEMasterClass10"
+           target="_blank" rel="noopener noreferrer">ICSE MasterClass ↗</a>
         <a href="#home">Back to top ↑</a>
       </div>
     </div>
