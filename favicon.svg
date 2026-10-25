@@ -1,0 +1,51 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff34a"/>
+      <stop offset="52%" stop-color="#f5e600"/>
+      <stop offset="100%" stop-color="#e0bd00"/>
+    </linearGradient>
+  </defs>
+
+  <rect
+    width="64"
+    height="64"
+    rx="14"
+    fill="#080807"
+  />
+
+  <rect
+    x="3"
+    y="3"
+    width="58"
+    height="58"
+    rx="12"
+    fill="url(#gold)"
+  />
+
+  <!-- Bold M -->
+  <path
+    d="M10 48V16h7l9 13 9-13h5v8l-14 19-9-12v17z"
+    fill="#080807"
+  />
+
+  <!-- B with a sharp diagonal cut -->
+  <path
+    d="M36 16h8c8 0 12 4 12 10
+       0 4-2 7-5 9
+       4 2 6 5 6 9
+       0 7-5 11-13 11H34l7-8h3
+       c4 0 6-1 6-4s-2-4-6-4h-9l6-8h4
+       c3 0 4-1 4-3s-1-3-4-3h-9z"
+    fill="#080807"
+  />
+
+  <!-- Signature lightning slash -->
+  <path
+    d="M42 9 29 33l8-4-8 18 17-24-9 4z"
+    fill="#080807"
+    stroke="#080807"
+    stroke-linejoin="round"
+  />
+</svg>
