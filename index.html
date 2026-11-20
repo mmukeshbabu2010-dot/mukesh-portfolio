@@ -6,13 +6,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#080807">
-  <meta name="description" content="M. Mukesh Babu — developer portfolio featuring Oqerun OS and three ICSE/CBSE education projects.">
+  <meta name="description" content="Mukesh Babu — ISC student exploring AI, technology, website management and independent open-source projects.">
   <meta name="author" content="M. Mukesh Babu">
-  <meta property="og:title" content="M. Mukesh Babu — Digital Worlds, Built With Curiosity">
+  <meta property="og:title" content="Mukesh Babu — Student Technology & Open-Source Portfolio">
   <meta property="og:description" content="Explore Oqerun OS and selected education projects from the ICSE-CBSE-10-12 community.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://mmukeshbabu2010-dot.github.io/mukesh-portfolio/">
-  <title>M. Mukesh Babu® — Creative Developer Portfolio</title>
+  <title>Mukesh Babu — Technology & Open-Source Portfolio</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -545,6 +545,19 @@
   background-image: url('./images/icse-hub.png');
 }
 
+
+    /* Experience cards — styled to match the existing portfolio system */
+    .experience-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; }
+    .experience-card { padding:30px; border:1px solid var(--line); background:linear-gradient(135deg,rgba(245,230,0,.055),transparent 55%),#10100e; transition:transform .25s ease,border-color .25s ease; }
+    .experience-card:hover { transform:translateY(-3px); border-color:rgba(245,230,0,.55); }
+    .experience-card h3 { margin:14px 0 8px; font-size:clamp(27px,3vw,40px); line-height:1; letter-spacing:-.07em; font-weight:500; }
+    .experience-card p { color:var(--muted); font-size:13px; line-height:1.85; }
+    .experience-card .experience-role { color:var(--text); font-size:12px; }
+    .experience-card .experience-note { color:var(--acid); font:10px var(--mono); text-transform:uppercase; letter-spacing:.08em; }
+    .project-vruntime { background-image:linear-gradient(135deg,rgba(245,230,0,.2),transparent 55%),radial-gradient(circle at 80% 20%,#4a4710,#141410 62%); }
+    .project-personal { background-image:linear-gradient(135deg,rgba(120,130,150,.25),transparent 55%),radial-gradient(circle at 80% 20%,#29313a,#141410 62%); }
+    @media (max-width:900px) { .experience-grid { grid-template-columns:1fr; } }
+
     /* Education panel */
 
     .education-panel {
@@ -1028,484 +1041,59 @@
 </head>
 
 <body>
-  <div class="cursor-glow" aria-hidden="true"></div>
-  <div class="topline"></div>
-
-  <header class="header">
-    <div class="wrap nav">
-      <a class="brand" href="#home" aria-label="M. Mukesh Babu home">
-        <span class="brand-symbol">MB</span>
-        <span>Mukesh Babu<span class="acid">®</span></span>
-      </a>
-
-      <nav class="navlinks" aria-label="Main navigation">
-        <a href="#work">Work</a>
-        <a href="#education">Education</a>
-        <a href="#about">About</a>
-        <a href="#stack">Tech stack</a>
-        <a href="#contact">Contact</a>
-      </nav>
-
-      <a class="nav-cta" href="https://github.com/mmukeshbabu2010-dot" target="_blank" rel="noopener noreferrer">
-        GITHUB ↗
-      </a>
-    </div>
-  </header>
-
+  <div class="cursor-glow" aria-hidden="true"></div><div class="topline"></div>
+  <header class="header"><div class="wrap nav">
+    <a class="brand" href="#home" aria-label="Mukesh Babu home"><span class="brand-symbol">MB</span><span>Mukesh Babu</span></a>
+    <nav class="navlinks" aria-label="Main navigation"><a href="#experience">Experience</a><a href="#work">Projects</a><a href="#education">Education</a><a href="#about">About</a><a href="#stack">Skills</a><a href="#contact">Contact</a></nav>
+    <a class="nav-cta" href="https://github.com/mmukeshbabu2010-dot" target="_blank" rel="noopener noreferrer">GITHUB ↗</a>
+  </div></header>
   <main>
-    <section class="hero wrap" id="home">
-      <div class="hero-backdrop" aria-hidden="true"></div>
-      <div class="hero-glow" aria-hidden="true"></div>
-
-      <div class="hero-inner">
-        <div class="hero-kicker mono">
-          <span class="live-dot"></span>
-          Independent builder · Portfolio 2026
+    <section class="hero wrap" id="home"><div class="hero-backdrop" aria-hidden="true"></div><div class="hero-glow" aria-hidden="true"></div><div class="hero-inner">
+      <div class="hero-kicker mono"><span class="live-dot"></span>ISC Student · Technology Explorer</div>
+      <h1>Exploring<br><span class="outline">what's</span> <span class="accent">possible.</span></h1>
+      <div class="hero-bottom"><div>
+        <p class="hero-copy">I'm Mukesh Babu, an ISC student interested in Artificial Intelligence, digital technology, website management and open-source projects. I enjoy exploring ideas, tools and practical digital projects.</p>
+        <div class="hero-actions"><a class="btn btn-primary" href="#work">EXPLORE PROJECTS <span>↘</span></a><a class="btn" href="mailto:mmukeshbabu.2010@gmail.com">CONTACT ME ↗</a></div>
+      </div><div class="hero-side"><strong>Curiosity<span class="acid">.</span><br>Learn. Explore.</strong><span class="mono">LEARN · EXPLORE · IMPROVE</span></div></div>
+    </div></section>
+    <div class="ticker" aria-label="Areas of interest"><div class="ticker-track"><span>ARTIFICIAL INTELLIGENCE <b>✳</b> TECHNOLOGY EXPLORATION <b>✳</b> WEBSITE MANAGEMENT <b>✳</b> OPEN-SOURCE SOFTWARE <b>✳</b> DIGITAL PROJECTS <b>✳</b></span><span aria-hidden="true">ARTIFICIAL INTELLIGENCE <b>✳</b> TECHNOLOGY EXPLORATION <b>✳</b> WEBSITE MANAGEMENT <b>✳</b> OPEN-SOURCE SOFTWARE <b>✳</b> DIGITAL PROJECTS <b>✳</b></span></div></div>
+    <section class="section" id="experience"><div class="wrap"><div class="section-head reveal"><div><div class="eyebrow">Current involvement / 01—02</div><h2>Learning through<br><span class="acid">initiative.</span></h2></div><p>Independent work and initiatives connected to websites, digital projects and open-source technology.</p></div>
+      <div class="experience-grid">
+        <article class="experience-card reveal"><div class="experience-note">Independent digital venture</div><h3>Quantora Digital<span class="acid">.</span></h3><p class="experience-role">Website Developer cum Manager</p><p>I work on website-related activities and digital initiatives, including website management and exploring AI tools that can support digital workflows.</p></article>
+        <article class="experience-card reveal"><div class="experience-note">Independent open-source initiative</div><h3>Vruntime Labs<span class="acid">.</span></h3><p class="experience-role">Founder</p><p>My independent initiative for exploring technology and maintaining open-source projects. The repositories below show the work and experiments associated with Vruntime Labs.</p></article>
+      </div></div></section>
+    <section class="section" id="work"><div class="wrap"><div class="section-head reveal"><div><div class="eyebrow">Selected work / 01—06</div><h2>Projects to<br><span class="acid">explore.</span></h2></div><p>A selection of independent open-source projects, personal explorations and education-related work. Visit each repository to review its current scope and progress.</p></div>
+      <div class="project-grid">
+        <article class="project wide reveal"><div class="project-bg project-vruntime"></div><div class="project-content"><span class="project-number">01 / OPEN-SOURCE PROJECT</span><span class="project-chip">Vruntime Labs</span></div><div class="project-bottom"><div><h3>PhantomX OS<span class="acid">.</span></h3><p class="project-desc">An independent Vruntime Labs project. Explore the repository for its current concept, implementation and development details.</p></div><div class="project-bottom-right"><div class="project-links"><a href="https://github.com/vruntime-labs/phantomx-os" target="_blank" rel="noopener noreferrer">GitHub Source ↗</a></div></div></div></article>
+        <article class="project reveal"><div class="project-bg project-vruntime"></div><div class="project-content"><span class="project-number">02 / OPEN-SOURCE PROJECT</span><span class="project-chip">Vruntime Labs</span></div><div class="project-bottom"><div><h3>Oqerun Store<span class="acid">.</span></h3><p class="project-desc">An independent project exploring an online store concept. Visit the repository to review its current scope and progress.</p></div><div class="project-bottom-right"><div class="project-links"><a href="https://github.com/vruntime-labs/oqerun-store" target="_blank" rel="noopener noreferrer">GitHub Source ↗</a></div></div></div></article>
+        <article class="project reveal"><div class="project-bg project-vruntime"></div><div class="project-content"><span class="project-number">03 / OPEN-SOURCE PROJECT</span><span class="project-chip">Vruntime Labs</span></div><div class="project-bottom"><div><h3>Vruntime Ink Theme<span class="acid">.</span></h3><p class="project-desc">An open-source theme project. Explore the repository for available files, usage details and implementation.</p></div><div class="project-bottom-right"><div class="project-links"><a href="https://github.com/vruntime-labs/vruntime-ink-theme" target="_blank" rel="noopener noreferrer">GitHub Source ↗</a></div></div></div></article>
+        <article class="project reveal"><div class="project-bg bg-os"></div><div class="project-content"><span class="project-number">04 / PERSONAL EXPLORATION</span><span class="project-chip">Operating-system concept</span></div><div class="project-bottom"><div><h3>Oqerun OS<span class="acid">.</span></h3><p class="project-desc">A browser-native desktop concept exploring windows, virtual files and web application experiences.</p></div><div class="project-bottom-right"><div class="project-links"><a href="https://vruntime-labs.github.io/oqerun-os/" target="_blank" rel="noopener noreferrer">Live Website ↗</a><a href="https://github.com/vruntime-labs/oqerun-os" target="_blank" rel="noopener noreferrer">GitHub Source ↗</a></div></div></div></article>
+        <article class="project wide reveal"><div class="project-bg project-personal"></div><div class="project-content"><span class="project-number">05 / PERSONAL PROJECT</span><span class="project-chip">3D & PC hardware</span></div><div class="project-bottom"><div><h3>RigCraft 3D<span class="acid">.</span></h3><p class="project-desc">An interactive 3D PC-building project exploring component selection, hardware compatibility and simulated PC experiences.</p></div><div class="project-bottom-right"><div class="project-links"><a href="https://mmukeshbabu2010-dot.github.io/rigcraft-3d/" target="_blank" rel="noopener noreferrer">Live Website ↗</a><a href="https://github.com/mmukeshbabu2010-dot/rigcraft-3d" target="_blank" rel="noopener noreferrer">GitHub Source ↗</a></div></div></div></article>
+        <article class="project reveal"><div class="project-bg project-personal"></div><div class="project-content"><span class="project-number">06 / EDUCATION PROJECTS</span><span class="project-chip">ICSE-CBSE-10-12</span></div><div class="project-bottom"><div><h3>Learning resources<span class="acid">.</span></h3><p class="project-desc">Education-related projects and resources, presented separately from Vruntime Labs work.</p></div><div class="project-bottom-right"><div class="project-links"><a href="https://github.com/icse-cbse-10-12" target="_blank" rel="noopener noreferrer">Organization ↗</a></div></div></div></article>
+      </div></div></section>
+    <section class="section" id="education"><div class="wrap"><div class="section-head reveal"><div><div class="eyebrow">Education / ISC</div><h2>Learning is<br><span class="acid">ongoing.</span></h2></div><p>My current academic journey alongside independent exploration of technology and digital projects.</p></div>
+      <div class="education-panel reveal"><div><div class="eyebrow">School education</div><h3>Doveton Boys'<br>Hr. Sec. School</h3><p>Higher Secondary Education · Indian School Certificate (ISC) curriculum · Physics, Chemistry and Mathematics (PCM).</p></div><div class="resource-list">
+        <a class="resource" href="https://github.com/mmukeshbabu2010-dot" target="_blank" rel="noopener noreferrer"><span>Personal GitHub profile</span><span>↗</span></a>
+        <a class="resource" href="https://github.com/vruntime-labs" target="_blank" rel="noopener noreferrer"><span>Vruntime Labs · GitHub</span><span>↗</span></a>
+        <a class="resource" href="https://github.com/icse-cbse-10-12" target="_blank" rel="noopener noreferrer"><span>ICSE-CBSE-10-12 · Education projects</span><span>↗</span></a>
+      </div></div></div></section>
+    <section class="section" id="about"><div class="wrap about-grid"><div class="reveal"><div class="eyebrow">About me</div><h2 class="about-title">Curious<br>by nature<span>.</span><br><span>Learning</span> every day.</h2></div>
+      <div class="about-copy reveal"><p>I'm <strong>Mukesh Babu</strong>, an ISC student with an interest in Artificial Intelligence, technology, websites and open-source projects.</p>
+        <p>I enjoy exploring digital tools, understanding how websites and software work, and learning how technology can be used to solve practical problems. I'm still learning and building my understanding through independent exploration.</p>
+        <p>I'm involved in <strong>Quantora Digital</strong>, where I work on website-related activities, and <strong>Vruntime Labs</strong>, my independent open-source initiative. These are independent ventures and initiatives.</p>
+        <div class="skill-grid" id="stack">
+          <div class="skill"><b>AI & digital tools</b><span>Exploring AI tools and practical digital workflows</span></div>
+          <div class="skill"><b>Website management</b><span>Website-related tasks and ongoing project work</span></div>
+          <div class="skill"><b>Open-source software</b><span>Exploring repositories and independent projects</span></div>
+          <div class="skill"><b>Technology exploration</b><span>Learning about software, systems and digital technology</span></div>
+          <div class="skill"><b>No-code workflows</b><span>Exploring tools that simplify website and project workflows</span></div>
+          <div class="skill"><b>Digital project coordination</b><span>Organising website-related work and project activities</span></div>
         </div>
-
-        <h1>
-          Ideas into<br>
-          <span class="outline">digital</span>
-          <span class="accent">worlds.</span>
-        </h1>
-
-        <div class="hero-bottom">
-          <div>
-            <p class="hero-copy">
-              I'm M. Mukesh Babu — exploring software, AI, operating environments,
-              education and hardware. I build experiments into experiences you can
-              actually explore.
-            </p>
-
-            <div class="hero-actions">
-              <a class="btn btn-primary" href="#work">
-                EXPLORE THE WORK <span>↘</span>
-              </a>
-              <a class="btn" href="mailto:mmukeshbabu.2010@gmail.com">
-                LET'S CONNECT ↗
-              </a>
-            </div>
-          </div>
-
-          <div class="hero-side">
-            <strong>Curiosity<span class="acid">.</span><br>Then code.</strong>
-            <span class="mono">BUILD · TEST · ITERATE</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <div class="ticker" aria-label="Areas of work">
-      <div class="ticker-track">
-        <span>
-          SOFTWARE ENGINEERING <b>✳</b>
-          SYSTEMS DESIGN <b>✳</b>
-          AI EXPERIMENTS <b>✳</b>
-          EDUCATION TECH <b>✳</b>
-          3D & HARDWARE <b>✳</b>
-        </span>
-        <span aria-hidden="true">
-          SOFTWARE ENGINEERING <b>✳</b>
-          SYSTEMS DESIGN <b>✳</b>
-          AI EXPERIMENTS <b>✳</b>
-          EDUCATION TECH <b>✳</b>
-          3D & HARDWARE <b>✳</b>
-        </span>
-      </div>
-    </div>
-
-  <section class="section" id="work">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <div>
-        <div class="eyebrow">Selected work / 01—05</div>
-        <h2>Built to be<br><span class="acid">explored.</span></h2>
-      </div>
-      <p>
-        Five projects spanning a browser-native operating system, education
-        tools and interactive 3D hardware. Visit each live website or explore
-        its source repository.
-      </p>
-    </div>
-
-    <div class="project-grid">
-      <!-- 01: Oqerun OS -->
-      <article class="project wide reveal">
-        <div class="project-bg bg-os"></div>
-
-        <div class="project-content">
-          <span class="project-number">01 / OPERATING SYSTEM</span>
-          <span class="project-chip">VRuntime Labs · Open source</span>
-        </div>
-
-        <div class="project-bottom">
-          <div>
-            <h3>Oqerun OS<span class="acid">.</span></h3>
-            <p class="project-desc">
-              The web, reimagined as an operating system. A browser-native
-              desktop exploring windows, virtual files, process management
-              and web applications.
-            </p>
-          </div>
-
-          <div class="project-bottom-right">
-            <div class="project-links">
-              <a href="https://vruntime-labs.github.io/oqerun-os/"
-                 target="_blank" rel="noopener noreferrer">
-                Live Website ↗
-              </a>
-              <a href="https://github.com/vruntime-labs/oqerun-os"
-                 target="_blank" rel="noopener noreferrer">
-                GitHub Source ↗
-              </a>
-            </div>
-          </div>
-        </div>
-      </article>
-
-      <!-- 02: ICSE Class 10 Materials -->
-      <article class="project reveal">
-        <div class="project-bg bg-edu"></div>
-
-        <div class="project-content">
-          <span class="project-number">02 / STUDY RESOURCES</span>
-          <span class="project-chip">ICSE · Class 10</span>
-        </div>
-
-        <div class="project-bottom">
-          <div>
-            <h3>ICSE Class 10 Materials<span class="acid">.</span></h3>
-            <p class="project-desc">
-              A focused repository for Class 10 study materials.
-              Visit the website to explore its available resources.
-            </p>
-          </div>
-
-          <div class="project-bottom-right">
-            <div class="project-links">
-              <a href="https://icse-cbse-10-12.github.io/icse-class-10-materials/"
-                 target="_blank" rel="noopener noreferrer">
-                Live Website ↗
-              </a>
-              <a href="https://github.com/icse-cbse-10-12/icse-class-10-materials"
-                 target="_blank" rel="noopener noreferrer">
-                GitHub Source ↗
-              </a>
-            </div>
-          </div>
-        </div>
-      </article>
-
-      <!-- 03: EduBot -->
-      <article class="project reveal">
-        <div class="project-bg bg-forge"></div>
-
-        <div class="project-content">
-          <span class="project-number">03 / EDUCATION AI</span>
-          <span class="project-chip">Learning assistant</span>
-        </div>
-
-        <div class="project-bottom">
-          <div>
-            <h3>EduBot<span class="acid">.</span></h3>
-            <p class="project-desc">
-              An education-focused bot project from the ICSE-CBSE-10-12
-              community. Visit the live website or inspect the source.
-            </p>
-          </div>
-
-          <div class="project-bottom-right">
-            <div class="project-links">
-              <a href="https://edubot-nu-wheat.vercel.app/"
-                 target="_blank" rel="noopener noreferrer">
-                Live Website ↗
-              </a>
-              <a href="https://github.com/icse-cbse-10-12/EduBot"
-                 target="_blank" rel="noopener noreferrer">
-                GitHub Source ↗
-              </a>
-            </div>
-          </div>
-        </div>
-      </article>
-
-      <!-- 04: The ICSE Hub -->
-      <article class="project wide reveal">
-        <div class="project-bg bg-store"></div>
-
-        <div class="project-content">
-          <span class="project-number">04 / LEARNING HUB</span>
-          <span class="project-chip">ICSE · Community</span>
-        </div>
-
-        <div class="project-bottom">
-          <div>
-            <h3>The ICSE Hub<span class="acid">.</span></h3>
-            <p class="project-desc">
-              A dedicated ICSE learning hub. Visit the deployed website
-              to explore the project and its available features.
-            </p>
-          </div>
-
-          <div class="project-bottom-right">
-            <div class="project-links">
-              <a href="https://icse-cbse-10-12.github.io/The-ICSE-Hub/"
-                 target="_blank" rel="noopener noreferrer">
-                Live Website ↗
-              </a>
-              <a href="https://github.com/icse-cbse-10-12/The-ICSE-Hub"
-                 target="_blank" rel="noopener noreferrer">
-                GitHub Source ↗
-              </a>
-            </div>
-          </div>
-        </div>
-      </article>
-
-      <!-- 05: RigCraft 3D -->
-      <article class="project reveal">
-        <div class="project-bg"></div>
-
-        <div class="project-content">
-          <span class="project-number">05 / 3D & HARDWARE</span>
-          <span class="project-chip">Independent · Open source</span>
-        </div>
-
-        <div class="project-bottom">
-          <div>
-            <h3>RigCraft 3D<span class="acid">.</span></h3>
-            <p class="project-desc">
-              An interactive 3D PC builder with hardware compatibility
-              checks, power calculations and a virtual PC simulation
-              running in your browser.
-            </p>
-          </div>
-
-          <div class="project-bottom-right">
-            <div class="project-links">
-              <a href="https://mmukeshbabu2010-dot.github.io/rigcraft-3d/"
-                 target="_blank" rel="noopener noreferrer">
-                Live Website ↗
-              </a>
-              <a href="https://github.com/mmukeshbabu2010-dot/rigcraft-3d"
-                 target="_blank" rel="noopener noreferrer">
-                GitHub Source ↗
-              </a>
-            </div>
-          </div>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section class="section" id="education">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <div>
-        <div class="eyebrow">ICSE-CBSE-10-12</div>
-        <h2>Built for<br><span class="acid">learning.</span></h2>
-      </div>
-      <p>
-        Explore three education projects from the ICSE-CBSE-10-12
-        organization through their live websites and source repositories.
-      </p>
-    </div>
-
-    <div class="education-panel reveal">
-      <div>
-        <div class="eyebrow">Education projects</div>
-        <h3>Explore the<br>work.</h3>
-        <p>
-          Open a live website to use the project, or visit its GitHub
-          repository for source code, documentation and contribution details.
-        </p>
-      </div>
-
-      <div class="resource-list">
-        <a class="resource"
-           href="https://icse-cbse-10-12.github.io/icse-class-10-materials/"
-           target="_blank" rel="noopener noreferrer">
-          <span>ICSE Class 10 Materials · Website</span>
-          <span>↗</span>
-        </a>
-
-        <a class="resource"
-           href="https://github.com/icse-cbse-10-12/icse-class-10-materials"
-           target="_blank" rel="noopener noreferrer">
-          <span>ICSE Class 10 Materials · Source</span>
-          <span>↗</span>
-        </a>
-
-        <a class="resource"
-           href="https://edubot-nu-wheat.vercel.app/"
-           target="_blank" rel="noopener noreferrer">
-          <span>EduBot · Website</span>
-          <span>↗</span>
-        </a>
-
-        <a class="resource"
-           href="https://github.com/icse-cbse-10-12/EduBot"
-           target="_blank" rel="noopener noreferrer">
-          <span>EduBot · Source</span>
-          <span>↗</span>
-        </a>
-
-        <a class="resource"
-           href="https://icse-cbse-10-12.github.io/The-ICSE-Hub/"
-           target="_blank" rel="noopener noreferrer">
-          <span>The ICSE Hub · Website</span>
-          <span>↗</span>
-        </a>
-
-        <a class="resource"
-           href="https://github.com/icse-cbse-10-12/The-ICSE-Hub"
-           target="_blank" rel="noopener noreferrer">
-          <span>The ICSE Hub · Source</span>
-          <span>↗</span>
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-
-    <section class="section" id="education">
-      <div class="wrap">
-        <div class="section-head reveal">
-          <div>
-            <div class="eyebrow">ICSE-CBSE-10-12</div>
-            <h2>Built for<br><span class="acid">learning.</span></h2>
-          </div>
-          <p>
-            Three selected repositories from the ICSE-CBSE-10-12 organization.
-            No extra repositories are included here.
-          </p>
-        </div>
-
-        <div class="education-panel reveal">
-          <div>
-            <div class="eyebrow">Education projects</div>
-            <h3>Explore the<br>source.</h3>
-            <p>
-              Open each GitHub repository for its README, current features,
-              setup instructions and contribution details.
-            </p>
-          </div>
-
-          <div class="resource-list">
-            <a class="resource" href="https://github.com/icse-cbse-10-12/icse-class-10-materials" target="_blank" rel="noopener noreferrer">
-              <span>ICSE Class 10 Materials</span>
-              <span>↗</span>
-            </a>
-
-            <a class="resource" href="https://github.com/icse-cbse-10-12/EduBot" target="_blank" rel="noopener noreferrer">
-              <span>EduBot</span>
-              <span>↗</span>
-            </a>
-
-            <a class="resource" href="https://github.com/icse-cbse-10-12/The-ICSE-Hub" target="_blank" rel="noopener noreferrer">
-              <span>The ICSE Hub</span>
-              <span>↗</span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="about">
-      <div class="wrap about-grid">
-        <div class="reveal">
-          <div class="eyebrow">Behind the screen</div>
-          <h2 class="about-title">
-            Curiosity<br>
-            first<span>.</span><br>
-            <span>Build</span> from there.
-          </h2>
-        </div>
-
-        <div class="about-copy reveal">
-          <p>
-            I'm <strong>M. Mukesh Babu</strong>, an ISC student studying Physics,
-            Chemistry, Mathematics and Computer Science. I'm interested in how
-            technology works and how it can be used to build practical things.
-          </p>
-
-          <p>
-            I enjoy building interactive web experiences, experimenting with
-            browser-native systems and making learning tools easier to access.
-            I like turning an idea into a working version, then improving it
-            through iteration.
-          </p>
-
-          <p>
-            Oqerun OS is the only VRuntime Labs project featured here. The
-            education projects are linked directly to their repositories in
-            the MasterClass organization (GitHub: ICSE-CBSE-10-12).
-          </p>
-
-          <div class="skill-grid" id="stack">
-            <div class="skill">
-              <b>Core web</b>
-              <span>JavaScript · TypeScript · HTML · CSS</span>
-            </div>
-
-            <div class="skill">
-              <b>Frameworks</b>
-              <span>React · Vite · Node.js · Bun</span>
-            </div>
-
-            <div class="skill">
-              <b>Tools</b>
-              <span>Git · GitHub · Browser DevTools</span>
-            </div>
-
-            <div class="skill">
-              <b>Exploration</b>
-              <span>WebAssembly · UI animation · APIs</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="contact" id="contact">
-      <div class="wrap contact-inner">
-        <div class="reveal">
-          <div class="eyebrow">Have an idea?</div>
-          <h2>Let's make<br>something <span>real.</span></h2>
-          <p>
-            Interested in collaborating, discussing a project or exchanging
-            ideas about software, AI, education and hardware? Reach out.
-          </p>
-        </div>
-
-        <div class="contact-actions reveal">
-          <a class="btn btn-primary" href="mailto:mmukeshbabu.2010@gmail.com">
-            EMAIL ME ↗
-          </a>
-          <a class="btn" href="https://github.com/mmukeshbabu2010-dot" target="_blank" rel="noopener noreferrer">
-            GITHUB PROFILE ↗
-          </a>
-        </div>
-      </div>
-    </section>
+      </div></div></section>
+    <section class="contact" id="contact"><div class="wrap contact-inner"><div class="reveal"><div class="eyebrow">Get in touch</div><h2>Let's keep<br><span>exploring.</span></h2><p>Have a question about a project or want to exchange ideas about AI, technology, websites or open-source work? You can reach me through email or explore my public repositories.</p></div>
+      <div class="contact-actions reveal"><a class="btn btn-primary" href="mailto:mmukeshbabu.2010@gmail.com">EMAIL ME ↗</a><a class="btn" href="https://github.com/mmukeshbabu2010-dot" target="_blank" rel="noopener noreferrer">GITHUB PROFILE ↗</a><a class="btn" href="https://github.com/vruntime-labs" target="_blank" rel="noopener noreferrer">VRUNTIME LABS ↗</a></div></div></section>
   </main>
-
-  <footer>
-    <div class="wrap footer-inner">
-      <p>© 2026 M. Mukesh Babu. All rights reserved.</p>
-
-      <nav class="footer-links" aria-label="Footer navigation">
-        <a href="mailto:mmukeshbabu.2010@gmail.com">EMAIL</a>
-        <a href="https://github.com/mmukeshbabu2010-dot"
-           target="_blank" rel="noopener noreferrer">GITHUB ↗</a>
-        <a href="./privacy.html">PRIVACY POLICY</a>
-        <a href="./terms.html">TERMS OF USE</a>
-        <a href="#home">BACK TO TOP ↑</a>
-      </nav>
-    </div>
-  </footer>
-
+  <footer><div class="wrap footer-inner"><p>© 2026 Mukesh Babu. Student · Technology Explorer.</p><nav class="footer-links" aria-label="Footer navigation"><a href="mailto:mmukeshbabu.2010@gmail.com">EMAIL</a><a href="https://github.com/mmukeshbabu2010-dot" target="_blank" rel="noopener noreferrer">GITHUB ↗</a><a href="https://github.com/vruntime-labs" target="_blank" rel="noopener noreferrer">VRUNTIME LABS ↗</a><a href="./privacy.html">PRIVACY POLICY</a><a href="./terms.html">TERMS OF USE</a><a href="#home">BACK TO TOP ↑</a></nav></div></footer>
   <script>
     (() => {
       const items = document.querySelectorAll('.reveal');
