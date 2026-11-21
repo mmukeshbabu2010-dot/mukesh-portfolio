@@ -1,0 +1,114 @@
+[
+  {
+    "id": "phantomx-os",
+    "title": "PhantomX OS",
+    "category": "Operating Systems",
+    "gallery": "Operating Systems",
+    "affiliation": "Vruntime Labs",
+    "description": "An independent Vruntime Labs project. Explore the repository for its current concept, implementation and development details.",
+    "links": [
+      {
+        "label": "GitHub Source",
+        "type": "github",
+        "url": "https://github.com/vruntime-labs/phantomx-os"
+      }
+    ],
+    "previewImage": null,
+    "sortOrder": 1
+  },
+  {
+    "id": "oqerun-os",
+    "title": "Oqerun OS",
+    "category": "Operating-system concept",
+    "gallery": "Operating Systems",
+    "affiliation": "Personal exploration",
+    "description": "A browser-native desktop concept exploring windows, virtual files and web application experiences.",
+    "links": [
+      {
+        "label": "Live Website",
+        "type": "live",
+        "url": "https://vruntime-labs.github.io/oqerun-os/"
+      },
+      {
+        "label": "GitHub Source",
+        "type": "github",
+        "url": "https://github.com/vruntime-labs/oqerun-os"
+      }
+    ],
+    "previewImage": "images/oqerun-os.png",
+    "sortOrder": 2
+  },
+  {
+    "id": "oqerun-store",
+    "title": "Oqerun Store",
+    "category": "Digital Platforms",
+    "gallery": "Digital Platforms",
+    "affiliation": "Vruntime Labs",
+    "description": "An independent project exploring an online store concept. Visit the repository to review its current scope and progress.",
+    "links": [
+      {
+        "label": "GitHub Source",
+        "type": "github",
+        "url": "https://github.com/vruntime-labs/oqerun-store"
+      }
+    ],
+    "previewImage": null,
+    "sortOrder": 3
+  },
+  {
+    "id": "vruntime-ink-theme",
+    "title": "Vruntime Ink Theme",
+    "category": "Customisation",
+    "gallery": "Customisation",
+    "affiliation": "Vruntime Labs",
+    "description": "An open-source theme project. Explore the repository for available files, usage details and implementation.",
+    "links": [
+      {
+        "label": "GitHub Source",
+        "type": "github",
+        "url": "https://github.com/vruntime-labs/vruntime-ink-theme"
+      }
+    ],
+    "previewImage": null,
+    "sortOrder": 4
+  },
+  {
+    "id": "rigcraft-3d",
+    "title": "RigCraft 3D",
+    "category": "Interactive Technology",
+    "gallery": "Interactive Technology",
+    "affiliation": "Personal project",
+    "description": "An interactive 3D PC-building project exploring component selection, hardware compatibility and simulated PC experiences.",
+    "links": [
+      {
+        "label": "Live Website",
+        "type": "live",
+        "url": "https://mmukeshbabu2010-dot.github.io/rigcraft-3d/"
+      },
+      {
+        "label": "GitHub Source",
+        "type": "github",
+        "url": "https://github.com/mmukeshbabu2010-dot/rigcraft-3d"
+      }
+    ],
+    "previewImage": null,
+    "sortOrder": 5
+  },
+  {
+    "id": "learning-resources",
+    "title": "Learning Resources",
+    "category": "Education projects",
+    "gallery": "Learning",
+    "affiliation": "ICSE-CBSE-10-12",
+    "description": "Education-related projects and resources, presented separately from Vruntime Labs work.",
+    "links": [
+      {
+        "label": "Organization",
+        "type": "github",
+        "url": "https://github.com/icse-cbse-10-12"
+      }
+    ],
+    "previewImage": null,
+    "sortOrder": 6
+  }
+]
