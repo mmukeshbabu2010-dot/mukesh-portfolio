@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#090909"><meta name="description" content="Explore Mukesh Babu's projects in an interactive 3D museum or use the accessible 2D project directory.">
+<link rel="icon" type="image/svg+xml" href="./favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./assets/css/museum.css"><title>Project Museum — Mukesh Babu</title>
+<script src="./assets/js/projects.js" defer></script><script type="module" src="./assets/js/museum.js"></script>
+</head>
+<body class="museum-page"><div class="museum-shell">
+<header class="museum-top"><a class="museum-brand" href="./index.html">MUKESH BABU<span> / MUSEUM</span></a><a class="museum-link" href="./projects.html">2D PROJECTS ↗</a></header>
+<main>
+<section class="museum-intro" id="museum-intro"><div class="museum-kicker">A DIGITAL EXHIBITION · 01—06</div><h1>Ideas, on display.</h1><p>Explore a small collection of independent projects, technology explorations and learning resources. Choose the interactive 3D room or browse the same collection in a lightweight 2D layout.</p><div class="museum-actions"><button class="museum-button primary" id="enter-museum" type="button">ENTER THE MUSEUM</button><button class="museum-button" id="open-directory" type="button">BROWSE IN 2D</button></div></section>
+<section class="museum-stage" id="museum-stage" hidden aria-label="Interactive 3D project museum"><div class="museum-hud"><button class="museum-button" id="museum-home" type="button">LOBBY</button><button class="museum-button" id="museum-directory" type="button">SKIP 3D · 2D VIEW</button></div><div class="museum-hint">DRAG TO LOOK · CLICK AN EXHIBIT · SCROLL TO ZOOM</div><aside class="museum-panel" id="project-panel" hidden aria-live="polite"><button class="museum-button" id="close-panel" type="button">CLOSE ×</button><div id="panel-content"></div></aside></section>
+<p class="museum-status" id="museum-status" role="status" aria-live="polite"></p>
+<section class="museum-fallback" id="museum-fallback" hidden><div class="museum-kicker">THE PROJECT DIRECTORY</div><h2>Explore the collection.</h2><p>3D mode is optional. Every project remains available here without WebGL.</p><div class="museum-grid" id="museum-grid"></div></section>
+</main><footer class="museum-footer">A lightweight portfolio experience · 2D access is always available · <a href="./index.html" style="color:#d8bd83">Return to portfolio</a></footer>
+</div></body></html>
