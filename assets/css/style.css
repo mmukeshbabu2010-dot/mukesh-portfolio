@@ -1054,3 +1054,10 @@ html{scroll-behavior:smooth;scroll-padding-top:90px}body{background:radial-gradi
 
 /* Keep the transformed decorative grid inside its visual stage. */
 .hero-art{overflow:clip}
+
+
+/* Phase 3 — featured project cards, reusing the project catalogue system */
+.featured-projects .project{min-height:390px}
+.featured-projects .bg-os{background-image:url('../../images/oqerun-os.png')}
+.featured-projects-cta{display:flex;justify-content:center;margin-top:28px}
+@media(max-width:640px){.featured-projects .project{min-height:370px}.featured-projects-cta{margin-top:22px}}
